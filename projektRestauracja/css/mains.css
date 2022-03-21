@@ -1,0 +1,311 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navi .nav-link {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+.navi .nav-link:hover {
+  color: royalblue;
+}
+
+.navi .nav {
+  z-index: 100;
+}
+
+.hero-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/restaurant2-small.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.hero-text {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  font-family: "Dancing Script", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -10;
+}
+
+.day-dish {
+  background-color: #fff8dc;
+  text-transform: uppercase;
+}
+
+.day-dish .day-title {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.day-dish-img {
+  position: relative;
+  top: 50%;
+  left: 40%;
+  width: 400px;
+  height: 600px;
+  background-image: url("../img/danie-big.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.day-dish-img .day-dish-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+.day-dish-img .dish-name {
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  left: 6rem;
+  color: #fff;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.day-dish-img .dish-descript {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.menu {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu .menu-img {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/menu-big.jpg");
+}
+
+.menu .menu-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -10;
+}
+
+.menu .menu-list {
+  position: absolute;
+  top: 30rem;
+  left: 1020px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: tomato;
+  z-index: 10;
+}
+
+.menu .menu-price {
+  position: absolute;
+  width: 10rem;
+  left: 40rem;
+}
+
+.ofert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  background-color: #fff8dc;
+}
+
+.ofert h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.ofert .ofert-card {
+  position: relative;
+  margin: 20px 80px;
+  width: 450px;
+  height: 700px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.ofert .ofert-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.ofert .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  font-family: "Dancing Script", cursive;
+  border-radius: 15px;
+  text-align: center;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.ofert .text p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.4rem;
+}
+
+.ofert .ofert-card:hover .text {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 1;
+}
+
+.ofert .ofert-card:hover .one {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.ofert .ofert-card:hover .two {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.ofert .ofert-card:hover .three {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.ofert .one {
+  background-image: url("../img/wesele-big.jpg");
+}
+
+.ofert .two {
+  background-image: url("../img/komunia-big.jpg");
+}
+
+.ofert .three {
+  background-image: url("../img/imprezy-big.jpg");
+}
+
+.contact {
+  padding: 2rem;
+  height: 20rem;
+  width: 100%;
+  background-color: #fff8dc;
+}
+
+.contact .contact-name {
+  padding: 2rem;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.contact .contact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-transform: uppercase;
+}
+
+.contact .fa-solid,
+.contact .fa-brands {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #2f2f2f;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .hero-img {
+    background-image: url("../img/restaurant2-big.jpg");
+  }
+}
+/*# sourceMappingURL=mains.css.map */
